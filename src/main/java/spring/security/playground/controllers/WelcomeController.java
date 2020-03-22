@@ -7,14 +7,22 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WelcomeController {
 
+    @GetMapping("/home")
+    public String home() {
+        //language=HTML
+        return "<h1>Welcome</h1>";
+    }
+
     @GetMapping("/user")
     public String user() {
-        return "you have an access to user page";
+        //language=HTML
+        return "<h1>Welcome user</h1>";
     }
 
     @GetMapping("/admin")
     public String admin() {
-        return "you have an access to admin page";
+        //language=HTML
+        return "<h1>Welcome admin</h1>";
     }
 
 }
