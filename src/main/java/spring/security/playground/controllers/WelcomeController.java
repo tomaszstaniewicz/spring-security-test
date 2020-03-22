@@ -7,9 +7,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WelcomeController {
 
-    @GetMapping("/welcome")
-    public String welcome() {
-        return "welcome";
+    @GetMapping("/user")
+    public String user() {
+        return "you have an access to user page";
+    }
+
+    @GetMapping("/admin")
+    public String admin() {
+        return "you have an access to admin page";
     }
 
 }
